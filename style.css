@@ -18,8 +18,10 @@ body {
 }
 
 @media (max-width:768px) {
-.header { text-align: center;
-}
+
+    .header { 
+        text-align: center;
+    }
 }
 .main-wrapper {
     display: block;
@@ -88,7 +90,7 @@ label[for="new-task"] {
     display: block;
     margin: 0 0 20px;
 }
-input#new-task {
+#new-task {
     width: 318px;
 }
 
@@ -118,17 +120,17 @@ li > label {
 li >    input[type="text"] {
     width: 226px
 }
-button.delete img {
+.delete img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.delete img:hover {
     transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+#completed-tasks label {
     text-decoration: line-through
     color: #888;
 }
@@ -138,11 +140,11 @@ ul li input[type=text] {
     display:none
 }
 
-ul li.editMode input[type=text] {
+.editMode .task {
     display:inline-block;
     width:224px
 }
 
-ul li.editMode label {
+.editMode label {
     display:none;
 }
